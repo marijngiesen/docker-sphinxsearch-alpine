@@ -8,7 +8,7 @@ fi
 if [ "$1" = 'searchd' ]; then
   # If the sphinx config exists, try to run the indexer before starting searchd
   if [ -f /etc/sphinx/sphinx.conf ]; then
-    exec "indexer --all"
+    indexer --all
   fi
 fi
 
